@@ -1,0 +1,6 @@
+#node stuff
+node_modules
+
+#app stuff
+domain-rentals.csv
+domain-rentals-*.csv
