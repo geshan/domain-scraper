@@ -19,12 +19,12 @@ Each domain rental listing has a unique Id like `https://www.domain.com.au/12500
 `https://www.domain.com.au/27a-arcadia-road-chester-hill-nsw-2162-12500140` but the id `12500140`
 stays the same. So this script used that unique id to visit that page and scrape 10 fields out of it then save it as a csv which is a lot easy to compare than visiting 10-20 pages. You can do it following the steps below:
 
-1. Add all your liked listing on `domain.com.au` in your shortlist. Yes you need to register and login.
-1. Then run [this](https://gist.github.com/geshan/378be819646682c715e38a653c680401) super small script on `each` of your shortlist page to get the IDs you want to compare. (only tested on chrome)
+* Add all your liked listing on `domain.com.au` in your shortlist. Yes you need to register and login.
+* Then run [this](https://gist.github.com/geshan/378be819646682c715e38a653c680401) super small script on `each` of your shortlist page to get the IDs you want to compare. (only tested on chrome)
 
 ![script run on chrome](https://github.com/geshan/domain-scraper/raw/master/readme-images/shortlist-to-ids-js.png)
-1. Copy/replace the IDs to line no. 22-27, basically fill up the `listingIds` array correctly.
-1. Then run the script as shown below.
+* Copy/replace the IDs to line no. 22-27, basically fill up the `listingIds` array correctly.
+* Then run the script as shown below.
 
 ### Run
 
