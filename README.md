@@ -41,3 +41,8 @@ It will not run for buying listings and it will have wierd characters here and t
 ### Contributions
 
 Yes of course, there are lots of things to improve. Any contribution/PR is really welcome.
+
+## To Do
+
+* add docker file
+* add tests may be :D
