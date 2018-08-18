@@ -11,7 +11,7 @@ function writeCsvFile(listings) {
   const json2csvParser = new Json2csvParser({ fields });
   const csv = json2csvParser.parse(listings);
   console.log(`Writing csv with ${listings.length} property listings`);
-  fs.writeFileSync(`domain-rentals-${Date.now()}.csv`, csv);
+  fs.writeFileSync(`domain-rentals.csv`, csv);
 }
 
 (async function run() {

@@ -28,7 +28,11 @@ stays the same. So this script used that unique id to visit that page and scrape
 
 ### Run
 
-`node index.js` gives out domain-rentals-{timestamp}.csv in the same directory with some fields for comparision like rent, no. of bedrooms, no. of bathrooms, no. of parking, available from etc.
+`node index.js` gives out domain-rentals.csv in the same directory with some fields for comparision like rent, no. of bedrooms, no. of bathrooms, no. of parking, available from etc.
+
+## Running with docker
+
+Just do `docker-compose up`. On each save it will run the scirpt as it is running with `nodemon`.
 
 ### Tests
 
@@ -44,5 +48,5 @@ Yes of course, there are lots of things to improve. Any contribution/PR is reall
 
 ## To Do
 
-* add docker file
+* ~~add docker and docker-compose~~
 * add tests may be :D

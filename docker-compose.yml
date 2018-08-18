@@ -1,0 +1,7 @@
+scraper:
+  build: .
+  volumes:
+   - .:/src
+  command: npm start
+  environment:
+    NODE_ENV: dev
