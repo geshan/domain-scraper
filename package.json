@@ -1,0 +1,16 @@
+{
+  "name": "domain-scraper",
+  "version": "0.0.1",
+  "description": "A simple scraper to give domain.com.au data in tablular format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Geshan Manandhar",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "json2csv": "^4.2.0"
+  }
+}
