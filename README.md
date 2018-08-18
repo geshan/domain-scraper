@@ -4,7 +4,9 @@ A very simple domain.com.au rental listing scraper to compare listings as there 
 option in domain. So this script pulls in `X` number of listing that helps you compare domain's
 rental listing as coming to a new city it is a very handy thing to have.
 
-<image-here>
+![From domain shortlist listing](https://github.com/geshan/domain-scraper/raw/master/readme-images/shortlist-listing.png)
+
+![to a csv file](https://github.com/geshan/domain-scraper/raw/master/readme-images/csv-listing.png)
 
 ### Disclaimer
 
@@ -19,8 +21,8 @@ stays the same. So this script used that unique id to visit that page and scrape
 
 1. Add all your liked listing on `domain.com.au` in your shortlist. Yes you need to register and login.
 1. Then run [this](https://gist.github.com/geshan/378be819646682c715e38a653c680401) super small script on `each` of your shortlist page to get the IDs you want to compare. (only tested on chrome)
+![script run on chrome](https://github.com/geshan/domain-scraper/raw/master/readme-images/shortlist-to-ids-js.png)
 1. Copy/replace the IDs to line no. 22-27, basically fill up the `listingIds` array correctly.
-<image-here>
 1. Then run the script as shown below.
 
 ### Run
@@ -30,6 +32,10 @@ stays the same. So this script used that unique id to visit that page and scrape
 ### Tests
 
 Would have been good to have them, it is just a useful hack. 
+
+### Gotcha
+
+It will not run for buying listings and it will have wierd characters here and there. Don't like this, send a PR! ;)
 
 ### Contributions
 
