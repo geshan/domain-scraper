@@ -29,11 +29,11 @@ stays the same. So this script used that unique id to visit that page and scrape
 
 ![script run on chrome](https://github.com/geshan/domain-scraper/raw/master/readme-images/shortlist-to-ids-js.png)
 * Copy/replace the IDs to line no. [22-27](https://github.com/geshan/domain-scraper/blob/master/index.js#L22-L27), basically fill up the `listingIds` array correctly.
-* Then run the script as shown below.
+* Then run the script as shown below to get the csv of your listing Ids.
 
 ### Run
 
-`node index.js` gives out domain-rentals.csv in the same directory with some fields for comparision like rent, no. of bedrooms, no. of bathrooms, no. of parking, available from etc.
+`node index.js` gives out domain-rentals.csv in the same directory with some fields for comparision like rent, no. of bedrooms, no. of bathrooms, no. of parking, available from etc. Hopefully you have a recent verison of node installed locally or try docker.
 
 ### Running with docker
 
