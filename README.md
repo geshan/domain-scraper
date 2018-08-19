@@ -2,7 +2,8 @@
 
 A very simple domain.com.au rental listing scraper to compare listings as there is no compare
 option in domain. So this script pulls in `X` number of listing that helps you compare domain's
-rental listing as coming to a new city it is a very handy thing to have.
+rental listing as coming to a new city it is a very handy thing to have. This will be very helpful
+to people trying to move and even more helpful to people who just landed in Australian cities.
 
 ![From domain shortlist listing](https://github.com/geshan/domain-scraper/raw/master/readme-images/shortlist-listing.png)
 ![to](https://github.com/geshan/domain-scraper/raw/master/readme-images/down-arrow.png)
@@ -11,6 +12,10 @@ rental listing as coming to a new city it is a very handy thing to have.
 ### Disclaimer
 
 Very irresponsible and hacky software ahead that works and does the job :).
+
+## Packages
+
+It is only using Axios, Cheerio and Json2Csv for now.
 
 ## Steps
 
@@ -23,7 +28,7 @@ stays the same. So this script used that unique id to visit that page and scrape
 * Then run [this](https://gist.github.com/geshan/378be819646682c715e38a653c680401) super small script on `each` of your shortlist page to get the IDs you want to compare. (only tested on chrome)
 
 ![script run on chrome](https://github.com/geshan/domain-scraper/raw/master/readme-images/shortlist-to-ids-js.png)
-* Copy/replace the IDs to line no. 22-27, basically fill up the `listingIds` array correctly.
+* Copy/replace the IDs to line no. [22-27](https://github.com/geshan/domain-scraper/blob/master/index.js#L22-L27), basically fill up the `listingIds` array correctly.
 * Then run the script as shown below.
 
 ### Run
