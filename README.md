@@ -13,11 +13,11 @@ to people trying to move and even more helpful to people who just landed in Aust
 
 Very irresponsible and hacky software ahead that works and does the job :). It might break randomly.
 
-## Packages
+### Packages
 
 It is only using Axios, Cheerio and Json2Csv for now.
 
-## Steps
+### Steps
 
 Each domain rental listing has a unique Id like `https://www.domain.com.au/12500140` redirects to
 
@@ -35,7 +35,7 @@ stays the same. So this script used that unique id to visit that page and scrape
 
 `node index.js` gives out domain-rentals.csv in the same directory with some fields for comparision like rent, no. of bedrooms, no. of bathrooms, no. of parking, available from etc.
 
-## Running with docker
+### Running with docker
 
 Just do `docker-compose up`. On each save it will run the scirpt as it is running with `nodemon`.
 
@@ -51,7 +51,7 @@ It will not run for buying listings and it will have wierd characters here and t
 
 Yes of course, there are lots of things to improve. Any contribution/PR is really welcome.
 
-## To Do
+### To Do
 
 * ~~add docker and docker-compose~~
 * add tests may be :D
