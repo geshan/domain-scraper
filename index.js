@@ -1,5 +1,4 @@
-const axios = require('axios');
-const cheerio = require('cheerio');
+const axrio = require('@geshan/axrio');
 const Json2csvParser = require('json2csv').Parser;
 const fs = require('fs');
 
@@ -29,11 +28,7 @@ function writeCsvFile(listings) {
       const uniqueListingIds = [ ...new Set(listingIds) ];
       //making it unique with set
       for(listingId of uniqueListingIds) {
-        let response = await axios.get(
-          `https://www.domain.com.au/${listingId}`,
-          {timeout}
-        );
-        const $ = cheerio.load(response.data);
+        const $ = await axrio.getPage(`https://www.domain.com.au/${listingId}`, timeout);
         const address = $('div.listing-details__summary-left-column h1').text();
         let [_, rentPerWeekRaw] = $('div.listing-details__summary-left-column div').text().split("$");
         const [rentPerWeek] = rentPerWeekRaw ? rentPerWeekRaw.split(' ') : [rentPerWeekRaw];
