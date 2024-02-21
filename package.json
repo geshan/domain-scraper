@@ -10,7 +10,7 @@
   "author": "Geshan Manandhar",
   "license": "ISC",
   "dependencies": {
-    "@geshan/axrio": "^1.0.1",
+    "@geshan/axrio": "^1.1.0",
     "json2csv": "^4.2.0"
   }
 }
